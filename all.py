@@ -12,20 +12,32 @@ from follow_protocol import follow_protocol
 from instabot import InstaBot
 from unfollow_protocol import unfollow_protocol
 
+
+username=os.environ['INSTAGRAM_USERNAME']
+password=os.environ['INSTAGRAM_PASSWORD']
+
 bot = InstaBot(
-    login="username",
-    password="password",
-    like_per_day=1000,
+    login=username,
+    password=password,
+    like_per_day=5000,
     comments_per_day=0,
-    tag_list=['follow4follow', 'f4f', 'cute'],
+    tag_list=['comingsoon', '613', 'beardsandbitters', 'ottawa', 'canada',
+'canadian', 'beard', 'beardoil', 'beardoils', 'beardlife',
+'barber', 'barbershop', 'barbershopconnect',
+'lifestyle', 'mensstyle', 'mensgrooming', 'photooftheday', 'instagood',
+'beardsofinstagram', 'hair','grooming', 'love','natural',
+'natural', 'cocktails', 'cocktail', 'cocktailbar', 'bitters', 'tgif', 'drinks', 'patio', 'hypebeast', 'mensfashion',
+'coffee', 'cafe', 'espresso', '', 'coffeeshop', 'latteart', 'hipster', 
+
+],
     tag_blacklist=['rain', 'thunderstorm'],
     user_blacklist={},
-    max_like_for_one_tag=50,
-    follow_per_day=300,
+    max_like_for_one_tag=500,
+    follow_per_day=10,
     follow_time=1 * 60,
-    unfollow_per_day=300,
-    unfollow_break_min=15,
-    unfollow_break_max=30,
+    # unfollow_per_day=300,
+    # unfollow_break_min=15,
+    # unfollow_break_max=30,
     log_mod=0,
     proxy='',
     # List of list of words, each of which will be used to generate comment
