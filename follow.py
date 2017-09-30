@@ -18,7 +18,7 @@ password=os.environ['INSTAGRAM_PASSWORD']
 bot = InstaBot(
     login=username,
     password=password,
-    like_per_day=5000,
+    like_per_day=0,
     comments_per_day=0,
     # tag_list=[
     # 'beard', 'beards', 'beardoil', 'beardoils',
@@ -35,11 +35,11 @@ bot = InstaBot(
     tag_blacklist=[],
     user_blacklist={},
     max_like_for_one_tag=50,
-    follow_per_day=10,
-    follow_time=1 * 60,
-    unfollow_per_day=240,
-    # unfollow_break_min=2,
-    # unfollow_break_max=5,
+    follow_per_day=1000,
+    follow_time=1,
+    unfollow_per_day=1000,
+    unfollow_break_min=1,
+    unfollow_break_max=2,
     log_mod=0,
     proxy='',
     # List of list of words, each of which will be used to generate comment

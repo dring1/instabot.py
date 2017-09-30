@@ -27,19 +27,16 @@ bot = InstaBot(
     # 'cabin', 'wood', 'toronto', 'montreal', 'vancouver', 'calgary'
     # ],
     tag_list=[
-    'beard', 'beards', 'beardoil', 'beardoils', '613', 'cocktails', 
-    'cocktails', 'cocktail', 'cocktailbar',
-    'hipster',
-    'ottawa','canada', 'canadian', 'toronto', 'montreal', 'vancouver', 'calgary'
+    'ottawa','yow'
     ],
     tag_blacklist=[],
     user_blacklist={},
     max_like_for_one_tag=50,
     follow_per_day=10,
     follow_time=1 * 60,
-    unfollow_per_day=240,
-    # unfollow_break_min=2,
-    # unfollow_break_max=5,
+    # unfollow_per_day=300,
+    # unfollow_break_min=15,
+    # unfollow_break_max=30,
     log_mod=0,
     proxy='',
     # List of list of words, each of which will be used to generate comment
